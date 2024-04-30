@@ -1,0 +1,63 @@
+
+@import 'media'
+@import 'fonts'
+@import 'variables'
+
+.galery
+    margin-top: 240px
+    &__light
+        width: 100%
+        position: relative
+        @include _979
+            display: none
+
+        .lamp
+            display: block
+            margin: 0 auto
+
+        .light
+            opacity: 0
+            width: max-content
+            position: absolute
+            left: calc(50% - 1027px)
+            top: -55px
+
+        .element-animation.element-show
+            animation: glow 0.5s linear
+            opacity: 1
+
+    &__container
+
+    &__inner
+        margin-top: 50px
+        z-index: 10
+        position: relative
+    &__title
+        display: block
+        margin: 0 auto
+        text-align: center
+        h2
+            color: #B9DDFD
+            text-align: center
+            font-family: $second-font
+            font-size: 38px
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+
+    &__photos
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        margin-top: 70px
+
+    &__photo-block
+        margin: 30px
+        display: inline-block
+        img
+            border-radius: 5px
+            border: 1px solid #4098E6
+            width: 256px
+            height: 216px
+
+.image-box

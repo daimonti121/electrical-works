@@ -1,0 +1,170 @@
+@import 'media'
+@import 'fonts'
+@import 'variables'
+
+
+.links
+    padding: 65px 0px
+    position: relative
+    &::after
+        content: url('../img/header-decor.png')
+        position: absolute
+        left: calc( 50% - 212px )
+        top: 0
+        z-index: -1
+        @include _979
+            display: none
+    @include _1440 
+        padding: 40px 0px
+    @include _979 
+        padding: 0px 0px
+    &__container 
+        @include _1440 
+            margin: 0 20px !important
+        @include _979 
+            display: none
+    &__inner 
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__logo 
+        @include _1170 
+            margin-right: 20px
+    &__nav 
+        ul
+            display: flex
+            justify-content: space-between
+            align-items: center
+            li               
+                margin-right: 50px
+                z-index: 10
+                &:last-child
+                    margin-right: 0
+                @include _1170 
+                    margin-right: 30px
+                a
+                    text-decoration: none
+                    color: #B9DDFD
+                    font-family: $primary-font
+                    font-size: 17px
+                    font-style: normal
+                    font-weight: 700
+                    line-height: 100%
+                    transition: 0.4s all
+                    z-index: 10
+
+            li:hover a
+                color: #CB49FF
+    &__back-links 
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__number 
+        margin-right: 14px
+        position: relative
+        &:hover a
+            color: #CB49FF
+        &::after
+            content: url('../img/light_header.png')
+            position: absolute
+            color: #fff
+            top: 20px
+            left: 12px
+        a
+            text-decoration: none
+            text-decoration: none
+            color: #B9DDFD
+            font-family: $primary-font
+            font-weight: 700
+            font-size: 17px
+            transition: 0.4s all
+            @include _1170 
+                display: none
+        
+    &__networks 
+        a
+            text-decoration: none
+            &:hover .icon
+                fill: #CB49FF
+        .icon 
+            width: 17px
+            height: 17px
+            text-decoration: none
+            fill: #B9DDFD
+            transition: 0.4s all
+            margin-right: 15px
+        &:last-child
+            margin-right: 0px
+
+.header 
+    .info
+        max-width: 1920px
+        width: 100%
+        height: 710px
+        background: url('../img/image_background_header.png') 0%/cover no-repeat
+        @include _979
+            display: none
+        &__container
+            margin: 0px auto
+            @include _1440
+                margin: 0px 20px
+        &__inner
+            padding-top: 195px
+            padding-bottom: 195px
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+            h2
+                color: #F3C231
+                font-family: $second-font
+                font-size: 60px
+                font-style: normal
+                font-weight: 400
+                line-height: normal
+                letter-spacing: 3px
+                text-align: right
+            h4
+                color: #F3C231
+                font-family: $second-font
+                font-size: 38px
+                font-style: normal
+                font-weight: 400
+                line-height: normal
+                letter-spacing: -0.38px
+                text-align: end
+
+            p
+                color: #B9DDFD
+                font-family: $primary-font
+                font-size: 28px
+                font-style: italic
+                font-weight: 200
+                line-height: normal
+                text-align: end
+                margin-top: 30px
+            
+            a
+                margin-top: 50px
+                padding: 20px 60px
+                text-decoration: none
+                border: 2px solid #9511C0
+                color: #B9DDFD
+                text-align: center
+                font-family: $primary-font
+                font-size: 17px
+                font-style: normal
+                font-weight: 700
+                line-height: normal
+                letter-spacing: 0.51px
+                padding: 20px 53px 
+                border-radius: 10px
+                background: rgba(149, 17, 192, 0.20)
+                cursor: pointer
+                transition: 0.4s
+                text-decoration: none
+                box-shadow: 0px 1px 8px 0px #9011BA
+                &:hover
+                    color: #F3C231
+                    background: rgba(149, 17, 192, 0.10)
+

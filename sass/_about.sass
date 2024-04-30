@@ -1,0 +1,112 @@
+@import 'media'
+@import 'fonts'
+@import 'variables'
+
+.about
+    margin-top: 130px
+    margin-bottom: 250px
+    @include _1170
+        margin-top: 70px
+    @include _979
+        margin-top: 50px
+
+    .title
+        h2
+            color: #B9DDFD
+            text-align: center
+            font-family: $second-font
+            font-size: 38px
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+            @include _979
+                font-size: 25px
+    .about__inner
+        display: flex
+        margin-top: 100px
+        @include _979
+            flex-direction: column
+            margin-top: 40px
+    .image
+        position: relative
+        display: block
+        .light
+            position: absolute
+            left: 0
+            top: -29px
+            opacity: 0
+
+        .element-animation.element-show
+            animation: glow 0.5s linear
+            opacity: 1
+        @include _979
+            display: none
+    .image-mob
+        display: none
+        @include _979
+            display: block
+        .lamp
+            display: block
+            margin: 0 auto
+            width: 230px
+            height: 16px
+        .light
+            position: absolute
+            // opacity: 0
+
+        .element-animation.element-show
+            animation: glow 0.5s linear
+            opacity: 1
+            width: 100%
+            left: 0
+            margin-top: -33px
+
+    .text
+        display: flex
+        @include _1170
+            flex-direction: column
+        @include _979
+            margin: 0 20px
+        .first-block-info
+            margin-top: 93px
+            @include _1170
+                margin-top: 50px
+            @include _979
+                margin-top: 40px
+            p
+                color: #B9DDFD
+                font-family: $primary-font
+                font-size: 17px
+                font-style: normal
+                font-weight: 400
+                line-height: normal
+                position: relative
+                width: max-content
+                z-index: 10
+                &:nth-child(n+2)
+                    margin-top: 26px
+                @include _979
+                    width: 100%
+        .second-block-info
+            max-width: 540px
+            margin-top: 240px
+            z-index: 10
+            @include _1170
+                max-width: 100%
+                margin-top: 0px
+            p
+                color: #B9DDFD
+                font-family: $primary-font
+                font-size: 17px
+                font-style: normal
+                font-weight: 400
+                line-height: normal
+                z-index: 10
+                &:nth-child(1)
+                    margin-top: 100px
+                    @include _1170
+                        margin-top: 26px
+                &:nth-child(n+2)
+                    margin-top: 26px
+                @include _979
+                    width: 100%

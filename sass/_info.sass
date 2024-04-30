@@ -1,0 +1,213 @@
+@import 'media'
+@import 'fonts'
+@import 'variables'
+
+.main
+    .services
+        margin-top: 130px
+        @include _1170
+            margin-top: 70px
+        @include _979
+            margin-top: 38px
+        &__title
+            color: #B9DDFD
+            text-align: center
+            font-family: $second-font
+            font-size: 38px
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+            @include _979
+                font-size: 25px
+        
+        &__boxs
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            margin-top: 96px
+            @include _1170 
+                justify-content: center
+                margin-top: 60px
+            @include _979
+                display: none                
+            .box
+                max-width: 390px
+                border-radius: 10px
+                background: #101F41
+                padding: 0px 31px
+                cursor: pointer
+                position: relative
+                overflow: hidden
+                transition: 1s all
+                &:nth-child(n+4)
+                    margin-top: 50px
+                    @include _1170 
+                        margin-top: 10px
+                &::before
+                    position: absolute
+                    content: ''
+                    width: 200%
+                    height: 35%
+                    top: 30%
+                    right: -50%
+                    border-radius: 0.5rem
+                    background: transparent
+                    transform: rotate(15deg) 
+                &:hover
+                    background: transparent
+                &:hover::before
+                    animation: animate 3.5s linear infinite
+                    background: linear-gradient(-45deg, #9511C0, #9511C0)    
+                &::after
+                    position: absolute
+                    content: ''
+                    inset: 3px 
+                    background: #101F41
+                    transition: 1s 
+                &:hover::after
+                    background: #11234B
+                @include _1170 
+                    margin: 10px
+                    // margin-top: 0
+                &__image
+                    position: relative
+                    z-index: 1
+                &__title
+                    margin-top: 60px
+                    color: #B9DDFD
+                    font-family: $second-font
+                    font-size: 25px
+                    font-style: normal
+                    font-weight: 400
+                    line-height: normal
+                    z-index: 1
+                    position: relative
+                &__info
+                    margin-top: 35px
+                &__info
+                    padding-bottom: 60px
+                    p
+                        color: #B9DDFD
+                        font-family: $primary-font
+                        font-size: 17px
+                        font-style: normal
+                        font-weight: 400
+                        line-height: normal
+                        z-index: 1
+                        position: relative
+                        max-width: 300px
+                    .bottom__info
+                        margin-top: 25px
+        &__button
+            margin-top: 50px
+            margin-bottom: 130px
+            text-align: center
+            @include _1170
+                margin-bottom: 70px
+            @include _979
+                margin-bottom: 0
+            a
+                text-decoration: none
+                border: 2px solid #9511C0
+                color: #B9DDFD
+                text-align: center
+                font-family: $primary-font
+                font-size: 17px
+                font-style: normal
+                font-weight: 700
+                line-height: normal
+                letter-spacing: 0.51px
+                padding: 20px 53px 
+                margin: 0 auto                
+                border-radius: 10px
+                background: rgba(149, 17, 192, 0.20)
+                cursor: pointer
+                box-shadow: 0px 1px 8px 0px #9011BA
+                transition: 0.4s all
+                display: inline-block
+                &:hover
+                    color: #F3C231
+                    background: rgba(149, 17, 192, 0.10)
+                @include _979
+                    font-size: 14px
+        
+        &__boxs-mob
+            display: none
+            @include _979
+                display: block
+            .box 
+                width: 280px
+                height: 410px
+                border-radius: 10px
+                background: #101F41
+                padding: 0px 31px
+                cursor: pointer
+                position: relative
+                overflow: hidden
+                transition: 1s all
+                margin: 25px 10px 0px                
+
+                @include _979
+                    margin: 25px 10px 0px          
+                    padding: 0px 36px  
+                &__image
+                    position: relative
+                    z-index: 1
+                    display: flex
+                    justify-content: center
+                    img
+                        max-width: 260px
+                        // width: 100%
+                &__title
+                    margin-top: 50px
+                    color: #B9DDFD
+                    font-family: $second-font
+                    font-size: 20px
+                    font-style: normal
+                    font-weight: 400
+                    line-height: normal
+                    z-index: 1
+                    position: relative
+                &__info
+                    margin-top: 22px
+                &__info
+                    padding-bottom: 42px
+                    p
+                        color: #B9DDFD
+                        font-family: $primary-font
+                        font-size: 14px
+                        font-style: normal
+                        font-weight: 400
+                        line-height: normal
+                        z-index: 1
+                        position: relative
+                    .bottom__info
+                        margin-top: 20px
+
+            .slick-dots
+                position: relative
+
+            .slick-dots li
+                background-color: rgba(64, 152, 230, 0.21)
+                border: 1.5px solid #4098E6
+                transform: rotate(45deg)
+                border-radius: 4px
+                width: 15px
+                height: 15px
+                overflow: hidden
+                margin: 0 12px
+                z-index: 1
+
+            .slick-dots li button
+                position: relative
+            
+            .slick-dots li.slick-active 
+                background-color: #4098E6
+                z-index: 100
+            
+
+@keyframes animate
+    0%  
+        transform: rotate(0deg)  
+    100%
+        transform: rotate(360deg)
