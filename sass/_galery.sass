@@ -5,6 +5,8 @@
 
 .galery
     margin-top: 240px
+    @include _979
+        margin-top: 50px
     &__light
         width: 100%
         position: relative
@@ -25,9 +27,6 @@
         .element-animation.element-show
             animation: glow 0.5s linear
             opacity: 1
-
-    &__container
-
     &__inner
         margin-top: 50px
         z-index: 10
@@ -44,12 +43,16 @@
             font-style: normal
             font-weight: 400
             line-height: normal
+            @include _979
+                font-size: 25px
 
     &__photos
         display: flex
         justify-content: space-between
         flex-wrap: wrap
         margin-top: 70px
+        @include _979
+            display: none
 
     &__photo-block
         margin: 30px
@@ -60,4 +63,21 @@
             width: 256px
             height: 216px
 
-.image-box
+.galery__mob
+    display: none
+    @include _979
+        display: flex
+        justify-content: center
+        margin-bottom: 200px
+
+.slick-initialized .slick-slide
+    display: flex
+    justify-content: center
+    outline: none
+.pswp__counter
+    @include _979
+        display: none
+
+.pswp__container
+    @include _979
+        margin: 0px 0px !important

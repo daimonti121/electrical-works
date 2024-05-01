@@ -26,8 +26,7 @@ import PhotoSwipeLightbox from '../photo/photoswipe-lightbox.esm.js';
 const lightbox = new PhotoSwipeLightbox({
     // may select multiple "galleries"
     gallery: '#my-gallery',
-    // showHideAnimationType: 'zoom',
-    // showHideAnimationType: 'fade',
+    pinchToClose: false,
     showHideAnimationType: 'none',
 
     // Elements within gallery (slides)

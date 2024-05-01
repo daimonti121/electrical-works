@@ -108,7 +108,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: all 0.5s; }
+    transition: all 0.5s;
+    border-radius: 20px; }
   .header__inner .menu-btn span:nth-child(1) {
     width: 24px;
     left: 12px; }
@@ -661,7 +662,9 @@
       position: relative;
       overflow: hidden;
       transition: 1s all;
-      margin: 25px 10px 0px; }
+      margin: 25px 10px 0px;
+      display: flex;
+      flex-direction: column; }
       @media (max-width: 979px) {
         .main .services__boxs-mob .box {
           margin: 25px 10px 0px;
@@ -764,7 +767,8 @@
       margin-top: 70px; } }
   @media (max-width: 979px) {
     .about {
-      margin-top: 50px; } }
+      margin-top: 50px;
+      margin-bottom: 0px; } }
   .about .title h2 {
     color: #B9DDFD;
     text-align: center;
@@ -808,7 +812,8 @@
       width: 230px;
       height: 16px; }
     .about .image-mob .light {
-      position: absolute; }
+      position: absolute;
+      opacity: 0; }
     .about .image-mob .element-animation.element-show {
       animation: glow 0.5s linear;
       opacity: 1;
@@ -910,6 +915,9 @@
     opacity: 1; } }
 .galery {
   margin-top: 240px; }
+  @media (max-width: 979px) {
+    .galery {
+      margin-top: 50px; } }
   .galery__light {
     width: 100%;
     position: relative; }
@@ -944,11 +952,17 @@
       font-style: normal;
       font-weight: 400;
       line-height: normal; }
+      @media (max-width: 979px) {
+        .galery__title h2 {
+          font-size: 25px; } }
   .galery__photos {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 70px; }
+    @media (max-width: 979px) {
+      .galery__photos {
+        display: none; } }
   .galery__photo-block {
     margin: 30px;
     display: inline-block; }
@@ -957,6 +971,27 @@
       border: 1px solid #4098E6;
       width: 256px;
       height: 216px; }
+
+.galery__mob {
+  display: none; }
+  @media (max-width: 979px) {
+    .galery__mob {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 200px; } }
+
+.slick-initialized .slick-slide {
+  display: flex;
+  justify-content: center;
+  outline: none; }
+
+@media (max-width: 979px) {
+  .pswp__counter {
+    display: none; } }
+
+@media (max-width: 979px) {
+  .pswp__container {
+    margin: 0px 0px !important; } }
 
 *, *::before, *::after {
   margin: 0;
