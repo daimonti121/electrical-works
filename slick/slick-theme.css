@@ -88,11 +88,13 @@
 }
 .slick-prev:before
 {
-    content: url('../img/arrow-before.png');
+    content: '1';
+    /* content: url('../img/arrow-before.png'); */
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: url('../img/arrow-after.png');
+    content: '1';
+    /* content: url('../img/arrow-after.png'); */
 }
 
 .slick-next
@@ -106,11 +108,13 @@
 }
 .slick-next:before
 {
-    content: url('../img/arrow-after.png');
+    /* content: url('../img/arrow-back.png'); */
+    content: '1';
 }
 [dir='rtl'] .slick-next:before
 {
-    content: url('../img/arrow-before.png');
+    /* content: url('../img/arrow-next.png'); */
+    content: '1';
 }
 
 /* Dots */
