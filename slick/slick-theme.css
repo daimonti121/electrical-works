@@ -88,13 +88,13 @@
 }
 .slick-prev:before
 {
-    content: '1';
-    /* content: url('../img/arrow-before.png'); */
+
+    content: url('../img/arrow-back.png');
+
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '1';
-    /* content: url('../img/arrow-after.png'); */
+        content: url('../img/arrow-before.png');
 }
 
 .slick-next
@@ -108,8 +108,8 @@
 }
 .slick-next:before
 {
-    /* content: url('../img/arrow-back.png'); */
-    content: '1';
+
+        content: url('../img/arrow-next.png');
 }
 [dir='rtl'] .slick-next:before
 {
