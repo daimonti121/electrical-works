@@ -20,8 +20,8 @@ $('.center').slick({
         arrows: false,
         centerMode: true,
         centerPadding: '0px',
-        autoplay: true, 
-        slidesToShow: 3, 
+        autoplay: true,
+        slidesToShow: 3,
         dots: true
       }
     },
@@ -31,8 +31,8 @@ $('.center').slick({
         arrows: false,
         centerMode: true,
         centerPadding: '0px',
-        autoplay: true, 
-        slidesToShow: 2, 
+        autoplay: true,
+        slidesToShow: 2,
         dots: true
       }
     },
@@ -42,8 +42,8 @@ $('.center').slick({
         arrows: false,
         centerMode: true,
         centerPadding: '0px',
-        autoplay: true, 
-        slidesToShow: 1, 
+        autoplay: true,
+        slidesToShow: 1,
         dots: true
       }
     }
@@ -58,45 +58,50 @@ $('.second').slick({
   slidesToShow: 3,
   dots: false,
   responsive: [
-      {
-          breakpoint: 1000,
-          settings: {
-              centerMode: true,
-              centerPadding: '0px',
-              slidesToShow: 2,
-          }
-      },
-      {
-          breakpoint: 979,
-          settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: '0px',
-              autoplay: true,
-              slidesToShow: 3,
-              dots: true
-          }
-      },
-      {
-          breakpoint: 760,
-          settings: {
-              arrows: true,
-              centerMode: true,
-              centerPadding: '0px',
-              autoplay: true,
-              slidesToShow: 2,
-              dots: true
-          }
-      },
-      {
-          breakpoint: 480,
-          settings: {
-              arrows: true,
-              centerMode: true,
-              centerPadding: '0px',
-              autoplay: true,
-              slidesToShow: 1,
-          }
+    {
+      breakpoint: 1000,
+      settings: {
+        centerMode: true,
+        centerPadding: '0px',
+        slidesToShow: 2,
       }
+    },
+    {
+      breakpoint: 979,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '0px',
+        autoplay: true,
+        slidesToShow: 3,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 760,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '0px',
+        autoplay: true,
+        slidesToShow: 2,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '0px',
+        autoplay: false,
+        slidesToShow: 1,
+        // centerPadding: '30px'
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+      }
+    }
   ]
 });

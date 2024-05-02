@@ -940,6 +940,9 @@
     margin-top: 50px;
     z-index: 10;
     position: relative; }
+    @media (max-width: 979px) {
+      .galery__inner {
+        margin-top: 0; } }
   .galery__title {
     display: block;
     margin: 0 auto;
@@ -987,9 +990,12 @@
     max-width: 400px;
     width: 100%; }
   .galery__mob .slick-next {
-    right: 40px; }
+    right: 40%; }
   .galery__mob .slick-prev {
-    left: 0; }
+    left: 30%;
+    z-index: 1000; }
+  .galery__mob .slick-prev, .galery__mob .slick-next {
+    top: 105%; }
 
 @media (max-width: 979px) {
   .pswp__counter {
