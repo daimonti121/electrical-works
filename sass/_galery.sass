@@ -64,6 +64,7 @@
             border: 1px solid #4098E6
             width: 256px
             height: 216px
+            box-shadow: 3px 0px 70px 5px #1993ff
 
 .galery__mob
     display: none
@@ -80,13 +81,13 @@
         max-width: 400px
         width: 100%
     .slick-next
-        right: 40%
+        right: 38%
     .slick-prev
-        left: 30%
+        left: 28%
         z-index: 1000
 
     .slick-prev, .slick-next
-        top: 105%
+        top: 100%
     
 .pswp__counter
     @include _979
@@ -98,3 +99,5 @@
 
 .slick-track
     max-width: max-content
+.slick-slider .slick-track, .slick-slider .slick-list
+    overflow: visible
