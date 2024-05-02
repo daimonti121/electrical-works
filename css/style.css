@@ -711,7 +711,7 @@
       width: 15px;
       height: 15px;
       overflow: hidden;
-      margin: 0 12px;
+      margin: 12px;
       z-index: 1; }
     .main .services__boxs-mob .slick-dots li button {
       position: relative; }
