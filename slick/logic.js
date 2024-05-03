@@ -73,7 +73,7 @@ $('.second').slick({
         centerMode: true,
         centerPadding: '0px',
         autoplay: true,
-        slidesToShow: 3,
+        slidesToShow: 1,
         dots: true
       }
     },
@@ -84,7 +84,7 @@ $('.second').slick({
         centerMode: true,
         centerPadding: '0px',
         autoplay: true,
-        slidesToShow: 2,
+        slidesToShow: 1,
         dots: true
       }
     },

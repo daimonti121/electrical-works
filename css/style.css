@@ -975,8 +975,10 @@
       border-radius: 5px;
       border: 1px solid #4098E6;
       width: 256px;
-      height: 216px;
-      box-shadow: 3px 0px 70px 5px #1993ff; }
+      height: 216px; }
+      @media (max-width: 979px) {
+        .galery__photo-block img {
+          box-shadow: 3px 0px 70px 5px #1993ff; } }
 
 .galery__mob {
   display: none; }
