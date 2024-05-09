@@ -1,0 +1,94 @@
+@import 'media'
+@import 'fonts'
+@import 'variables'
+
+.system-work
+    margin-top: 100px
+    background: #101F41
+    padding: 130px 0px
+
+    &__title
+        h2
+            color: #B9DDFD
+            text-align: center
+            font-family: $second-font
+            font-size: 38px
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+    &__info
+        margin-top: 100px
+        display: flex
+        justify-content: space-between
+    .info-block
+        margin-right: 60px
+        &:nth-child(4)
+            margin-right: 0px
+        &__top
+            display: flex
+        .num
+            color: #F3C231
+            font-family: $primary-font
+            font-size: 38px
+            font-style: normal
+            font-weight: 700
+            line-height: normal
+            margin-right: 15px
+        .text
+            color: #F3C231
+            font-family: $primary-font
+            font-size: 25px
+            font-style: normal
+            font-weight: 700
+            line-height: normal
+        .info-block__line
+            margin-top: 27px
+
+            .line
+                border-radius: 1.3px
+                background: #F3C231
+                width: 15px
+                height: 15px
+                transform: rotate(45deg)
+                position: relative
+                z-index: 20
+            .line-forvard, .line-forvard-color
+                width: 130%
+                height: 2px
+                background: #6A4F00
+                position: relative
+                bottom: 8px
+                left: 0
+                transform: rotate(0deg)
+                z-index: 1
+            
+            .line-forvard-color 
+                background: rgb(106,79,0)
+                background: linear-gradient(40deg, rgba(106,79,0,0.4906337535014006) 70%, rgba(243,194,49,1) 100%)
+            
+            .finish 
+                width: 100%
+
+
+        .info-block__bottom
+            margin-top: 27px
+            .text
+                color: #B9DDFD
+                font-family: $primary-font
+                font-size: 14px
+                font-style: normal
+                font-weight: 400
+                line-height: normal
+
+        .network
+            margin-top: 23px
+            display: flex
+            align-items: center
+        .icon
+            width: 19px
+            height: 19px
+            margin-right: 15px
+            fill: #B9DDFD
+            transition: 0.4s all
+            &:hover
+                fill: #CB49FF
