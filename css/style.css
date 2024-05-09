@@ -1111,7 +1111,9 @@
         background: #6a4f00;
         background: linear-gradient(40deg, rgba(106, 79, 0, 0.4906337535) 70%, #f3c231 100%); }
       .system-work .info-block .info-block__line .finish {
-        width: 100%; }
+        width: 100%;
+        background: #6a4f00;
+        background: linear-gradient(40deg, #6a4f00 10%, rgba(106, 79, 0, 0) 100%); }
     .system-work .info-block .info-block__bottom {
       margin-top: 27px; }
       .system-work .info-block .info-block__bottom .text {
