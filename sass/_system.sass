@@ -6,7 +6,9 @@
     margin-top: 100px
     background: #101F41
     padding: 130px 0px
-
+    @include _979
+        padding: 38px 0px
+        margin-top: 40px
     &__title
         h2
             color: #B9DDFD
@@ -20,8 +22,15 @@
         margin-top: 100px
         display: flex
         justify-content: space-between
+        @include _1300
+            margin-left: 20px
+            margin-right: 20px
+        @include _979
+            display: none
     .info-block
         margin-right: 60px
+        @include _1170
+            margin-right: 30px
         &:nth-child(4)
             margin-right: 0px
         &__top
@@ -34,6 +43,10 @@
             font-weight: 700
             line-height: normal
             margin-right: 15px
+            @include _1300
+                font-size: 34px
+            @include _1170
+                font-size: 24px
         .text
             color: #F3C231
             font-family: $primary-font
@@ -41,6 +54,10 @@
             font-style: normal
             font-weight: 700
             line-height: normal
+            @include _1300
+                font-size: 22px
+            @include _1170
+                font-size: 18px
         .info-block__line
             margin-top: 27px
 
@@ -61,6 +78,8 @@
                 left: 0
                 transform: rotate(0deg)
                 z-index: 1
+                @include _1170
+                    width: 127%
 
             .line-forvard-color
                 background: rgb(106,79,0)
@@ -80,6 +99,8 @@
                 font-style: normal
                 font-weight: 400
                 line-height: normal
+                @include _1300
+                    font-size: 13px
 
         .network
             margin-top: 23px
@@ -91,5 +112,67 @@
             margin-right: 15px
             fill: #B9DDFD
             transition: 0.4s all
-            &:hover
-                fill: #CB49FF
+        a:hover > .icon
+            fill: #CB49FF
+
+    .system-mob
+        display: none
+        @include _979
+            display: flex
+            flex-direction: column
+            margin: 0 20px
+
+    .info-mob
+        display: flex
+        margin-top: 28px
+
+        &__left
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-right: 20px
+            .num
+                color: #F3C231
+                font-family: $primary-font
+                font-size: 30px
+                font-style: normal
+                font-weight: 700
+                line-height: normal
+            .line
+                margin-top: 6px
+                height: 158px
+                width: 2px
+                background: rgb(243,194,49)
+                background: linear-gradient(40deg, rgba(243,194,49,1) 35%, rgba(106,79,0,0) 100%)
+                border-radius: 50px
+            .width 
+                height: 115px
+                background: linear-gradient(40deg, rgba(243,194,49,1) 5%, rgba(106,79,0,0) 100%)
+
+        &__right
+            .title
+                color: #F3C231
+                font-family: $primary-font
+                font-size: 20px
+                font-style: normal
+                font-weight: 700
+                line-height: normal            
+        &__info
+            margin-top: 25px
+            color: #B9DDFD
+            font-family: $primary-font
+            font-size: 14px
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+
+        &__network
+            display: flex
+            margin-top: 24px
+            .icon
+                width: 20px
+                height: 20px
+                fill: #B9DDFD
+                margin-right: 20px
+                cursor: pointer
+                transition: 0.4s all
