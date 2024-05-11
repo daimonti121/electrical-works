@@ -1,0 +1,72 @@
+@import 'media'
+@import 'fonts'
+@import 'variables'
+
+.coments
+    padding: 130px 0px 112px
+    @include _979
+        padding: 38px 0px 38px
+    &__container
+        overflow: hidden
+
+    &__title
+        color: #B9DDFD
+        text-align: center
+        font-family: $second-font
+        font-size: 38px
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+        text-align: center
+    &__inner
+
+    .photos
+        max-width: 1100px
+        width: 100%
+        margin: 70px auto 0px
+        @include _979
+            margin-top: 0px
+        img
+            opacity: 0.5
+            transition: 0.4s all
+            transform: scale(0.9)
+    .slick-current img
+        opacity: 1
+        transform: scale(1)
+
+    &__button
+        margin-top: 50px
+        @include _979
+            margin-top: 10px
+        button
+            color: #B9DDFD
+            text-align: center
+            font-family: $primary-font
+            font-size: 14px
+            font-style: normal
+            font-weight: 700
+            line-height: normal
+            letter-spacing: 0.42px
+            padding: 17px 40px
+            border-radius: 10px
+            border: 0.8px solid #BB31E8
+            background: rgba(149, 17, 192, 0.20)
+            box-shadow: 0px 0px 4px 0px rgba(185, 44, 231, 0.75), 0px 0px 4px 0px rgba(144, 17, 186, 0.10), 0px 0px 12px 0px rgba(149, 17, 192, 0.55)
+            cursor: pointer
+            display: block
+            margin: 0 auto
+            transition: 0.4s
+            &:hover
+                background: transparent
+                box-shadow: none
+                color: #F3C231
+
+    .slick-initialized .slick-slide
+        display: flex !important
+        justify-content: center
+    .slick-prev
+        left: 0px
+        z-index: 10
+    .slick-next
+        right: 40px
+        z-index: 10
