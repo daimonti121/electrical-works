@@ -124,6 +124,7 @@ $('.forScreenShot').slick({
     {
       breakpoint: 480,
       settings: {
+        // autoplay: false,
         arrows: true,
         centerMode: true,
         centerPadding: '0px',

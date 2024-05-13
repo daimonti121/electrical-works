@@ -32,7 +32,9 @@
             transform: scale(0.9)
             @include _979
                 transform: scale(1)
-                width: auto
+                opacity: 1
+                width: 270px
+                height: auto
     .slick-current img
         opacity: 1
         transform: scale(1)
@@ -73,3 +75,7 @@
     .slick-next
         right: 40px
         z-index: 10
+    .slick-next:before
+        content: url('../img/arrow-next-gold.png')
+    .slick-prev:before
+        content: url('../img/arrow-back-gold.png')

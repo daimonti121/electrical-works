@@ -980,7 +980,9 @@
       @media (max-width: 979px) {
         .coments .photos img {
           transform: scale(1);
-          width: auto; } }
+          opacity: 1;
+          width: 270px;
+          height: auto; } }
   .coments .slick-current img {
     opacity: 1;
     transform: scale(1); }
@@ -1020,6 +1022,10 @@
   .coments .slick-next {
     right: 40px;
     z-index: 10; }
+  .coments .slick-next:before {
+    content: url("../img/arrow-next-gold.png"); }
+  .coments .slick-prev:before {
+    content: url("../img/arrow-back-gold.png"); }
 
 .galery {
   margin-top: 240px; }
@@ -1405,7 +1411,9 @@
       @media (max-width: 979px) {
         .coments .photos img {
           transform: scale(1);
-          width: auto; } }
+          opacity: 1;
+          width: 270px;
+          height: auto; } }
   .coments .slick-current img {
     opacity: 1;
     transform: scale(1); }
@@ -1445,6 +1453,10 @@
   .coments .slick-next {
     right: 40px;
     z-index: 10; }
+  .coments .slick-next:before {
+    content: url("../img/arrow-next-gold.png"); }
+  .coments .slick-prev:before {
+    content: url("../img/arrow-back-gold.png"); }
 
 *, *::before, *::after {
   margin: 0;
