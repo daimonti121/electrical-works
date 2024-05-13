@@ -981,7 +981,7 @@
         .coments .photos img {
           transform: scale(1);
           opacity: 1;
-          width: 302px;
+          width: auto;
           height: auto; } }
   .coments .slick-current img {
     opacity: 1;
@@ -1412,7 +1412,7 @@
         .coments .photos img {
           transform: scale(1);
           opacity: 1;
-          width: 302px;
+          width: auto;
           height: auto; } }
   .coments .slick-current img {
     opacity: 1;
