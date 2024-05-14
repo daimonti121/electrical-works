@@ -978,7 +978,9 @@
       transition: 0.4s all; }
       @media (max-width: 979px) {
         .coments .photos img {
-          opacity: 1; } }
+          opacity: 1;
+          width: 304px !important;
+          height: 591px !important; } }
   .coments .slick-current img {
     opacity: 1; }
   .coments__button {
@@ -1404,7 +1406,9 @@
       transition: 0.4s all; }
       @media (max-width: 979px) {
         .coments .photos img {
-          opacity: 1; } }
+          opacity: 1;
+          width: 304px !important;
+          height: 591px !important; } }
   .coments .slick-current img {
     opacity: 1; }
   .coments__button {
