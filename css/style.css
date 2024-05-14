@@ -975,7 +975,9 @@
         margin-top: 0px; } }
     .coments .photos img {
       opacity: 0.5;
-      transition: 0.4s all; }
+      transition: 0.4s all;
+      border: 1px solid #F3C231;
+      border-radius: 20px; }
       @media (max-width: 979px) {
         .coments .photos img {
           opacity: 1; } }
@@ -1401,7 +1403,9 @@
         margin-top: 0px; } }
     .coments .photos img {
       opacity: 0.5;
-      transition: 0.4s all; }
+      transition: 0.4s all;
+      border: 1px solid #F3C231;
+      border-radius: 20px; }
       @media (max-width: 979px) {
         .coments .photos img {
           opacity: 1; } }
