@@ -976,26 +976,15 @@
     .coments .photos img {
       opacity: 0.5;
       transition: 0.4s all;
-      transform: scale(0.9); }
+      image-rendering: pixelated; }
       @media (max-width: 979px) {
         .coments .photos img {
-          transform: scale(1);
           opacity: 1;
           width: auto;
           height: auto; } }
   .coments .slick-current img {
     opacity: 1;
     transform: scale(1); }
-  .coments .photos-mob img {
-    opacity: 0.5;
-    transition: 0.4s all;
-    transform: scale(0.9); }
-    @media (max-width: 979px) {
-      .coments .photos-mob img {
-        transform: scale(1);
-        opacity: 1;
-        width: auto;
-        height: auto; } }
   .coments__button {
     margin-top: 50px; }
     @media (max-width: 979px) {
@@ -1417,26 +1406,15 @@
     .coments .photos img {
       opacity: 0.5;
       transition: 0.4s all;
-      transform: scale(0.9); }
+      image-rendering: pixelated; }
       @media (max-width: 979px) {
         .coments .photos img {
-          transform: scale(1);
           opacity: 1;
           width: auto;
           height: auto; } }
   .coments .slick-current img {
     opacity: 1;
     transform: scale(1); }
-  .coments .photos-mob img {
-    opacity: 0.5;
-    transition: 0.4s all;
-    transform: scale(0.9); }
-    @media (max-width: 979px) {
-      .coments .photos-mob img {
-        transform: scale(1);
-        opacity: 1;
-        width: auto;
-        height: auto; } }
   .coments__button {
     margin-top: 50px; }
     @media (max-width: 979px) {
