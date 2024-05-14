@@ -976,7 +976,7 @@
     .coments .photos img {
       opacity: 0.5;
       transition: 0.4s all;
-      border: 1px solid #F3C231;
+      border: 2px solid #F3C231;
       border-radius: 20px; }
       @media (max-width: 979px) {
         .coments .photos img {
@@ -1404,7 +1404,7 @@
     .coments .photos img {
       opacity: 0.5;
       transition: 0.4s all;
-      border: 1px solid #F3C231;
+      border: 2px solid #F3C231;
       border-radius: 20px; }
       @media (max-width: 979px) {
         .coments .photos img {
