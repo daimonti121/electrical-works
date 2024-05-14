@@ -111,6 +111,7 @@ $('.forScreenShot').slick({
   autoplay: true,
   centerPadding: '10px',
   slidesToShow: 3,
+  focusOnSelect: true,
   responsive: [
     {
       breakpoint: 768,

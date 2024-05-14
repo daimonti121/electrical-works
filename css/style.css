@@ -979,8 +979,8 @@
       @media (max-width: 979px) {
         .coments .photos img {
           opacity: 1;
-          width: 306px;
-          height: 593px; } }
+          width: auto;
+          height: auto; } }
   .coments .slick-current img {
     opacity: 1; }
   .coments__button {
@@ -1407,8 +1407,8 @@
       @media (max-width: 979px) {
         .coments .photos img {
           opacity: 1;
-          width: 306px;
-          height: 593px; } }
+          width: auto;
+          height: auto; } }
   .coments .slick-current img {
     opacity: 1; }
   .coments__button {
