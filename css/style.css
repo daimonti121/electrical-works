@@ -975,8 +975,7 @@
         margin-top: 0px; } }
     .coments .photos img {
       opacity: 0.5;
-      transition: 0.4s all;
-      image-rendering: pixelated; }
+      transition: 0.4s all; }
       @media (max-width: 979px) {
         .coments .photos img {
           opacity: 1;
@@ -1404,8 +1403,7 @@
         margin-top: 0px; } }
     .coments .photos img {
       opacity: 0.5;
-      transition: 0.4s all;
-      image-rendering: pixelated; }
+      transition: 0.4s all; }
       @media (max-width: 979px) {
         .coments .photos img {
           opacity: 1;
