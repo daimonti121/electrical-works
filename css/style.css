@@ -980,8 +980,8 @@
       @media (max-width: 979px) {
         .coments .photos img {
           opacity: 1;
-          width: auto;
-          height: auto; } }
+          width: 302px;
+          height: 302px; } }
   .coments .slick-current img {
     opacity: 1;
     transform: scale(1); }
@@ -1410,8 +1410,8 @@
       @media (max-width: 979px) {
         .coments .photos img {
           opacity: 1;
-          width: auto;
-          height: auto; } }
+          width: 302px;
+          height: 302px; } }
   .coments .slick-current img {
     opacity: 1;
     transform: scale(1); }
