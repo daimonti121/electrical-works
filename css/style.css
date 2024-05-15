@@ -458,25 +458,24 @@
       margin-top: 50px;
       padding: 20px 60px;
       text-decoration: none;
-      border: 2px solid #9511C0;
       color: #B9DDFD;
       text-align: center;
       font-family: Inter;
-      font-size: 17px;
+      font-size: 14px;
       font-style: normal;
       font-weight: 700;
       line-height: normal;
-      letter-spacing: 0.51px;
-      padding: 20px 53px;
+      letter-spacing: 0.42px;
       border-radius: 10px;
+      border: 0.8px solid #BB31E8;
       background: rgba(149, 17, 192, 0.2);
+      box-shadow: 0px 0px 4px 0px rgba(185, 44, 231, 0.75), 0px 0px 4px 0px rgba(144, 17, 186, 0.1), 0px 0px 12px 0px rgba(149, 17, 192, 0.55);
       cursor: pointer;
-      transition: 0.4s;
-      text-decoration: none;
-      box-shadow: 0px 1px 8px 0px #9011BA; }
+      transition: 0.4s; }
       .header .info__inner a:hover {
-        color: #F3C231;
-        background: rgba(149, 17, 192, 0.1); }
+        background: transparent;
+        box-shadow: none;
+        color: #F3C231; }
 
 @font-face {
   font-family: Inter;
@@ -624,30 +623,29 @@
       .main .services__button {
         margin-bottom: 0; } }
     .main .services__button a {
-      text-decoration: none;
-      border: 2px solid #9511C0;
       color: #B9DDFD;
       text-align: center;
+      text-decoration: none;
       font-family: Inter;
-      font-size: 17px;
+      font-size: 14px;
       font-style: normal;
       font-weight: 700;
       line-height: normal;
-      letter-spacing: 0.51px;
+      letter-spacing: 0.42px;
       padding: 20px 53px;
-      margin: 0 auto;
       border-radius: 10px;
+      border: 0.8px solid #BB31E8;
       background: rgba(149, 17, 192, 0.2);
+      box-shadow: 0px 0px 4px 0px rgba(185, 44, 231, 0.75), 0px 0px 4px 0px rgba(144, 17, 186, 0.1), 0px 0px 12px 0px rgba(149, 17, 192, 0.55);
       cursor: pointer;
-      box-shadow: 0px 1px 8px 0px #9011BA;
-      transition: 0.4s all;
-      display: inline-block; }
+      display: inline-block;
+      margin: 0 auto;
+      transition: 0.4s; }
       .main .services__button a:hover {
+        background: transparent;
+        box-shadow: none;
         color: #F3C231;
-        background: rgba(149, 17, 192, 0.1); }
-      @media (max-width: 979px) {
-        .main .services__button a {
-          font-size: 14px; } }
+        font-size: 14px; }
   .main .services__boxs-mob {
     display: none; }
     @media (max-width: 979px) {
@@ -952,10 +950,10 @@
   100% {
     opacity: 1; } }
 .coments {
-  padding: 130px 0px 112px; }
+  padding: 130px 0px 108px; }
   @media (max-width: 979px) {
     .coments {
-      padding: 38px 0px 38px; } }
+      padding: 38px 0px 34px; } }
   .coments__container {
     overflow: hidden; }
   .coments__title {
@@ -985,7 +983,8 @@
   .coments .slick-current img {
     opacity: 1; }
   .coments__button {
-    margin-top: 50px; }
+    margin-top: 50px;
+    margin-bottom: 4px; }
     @media (max-width: 979px) {
       .coments__button {
         margin-top: 10px; } }
@@ -1012,7 +1011,8 @@
       .coments__button button:hover {
         background: transparent;
         box-shadow: none;
-        color: #F3C231; }
+        color: #F3C231;
+        font-size: 14px; }
   .coments .slick-initialized .slick-slide {
     display: flex;
     justify-content: center; }
@@ -1382,10 +1382,10 @@
   100% {
     opacity: 1; } }
 .coments {
-  padding: 130px 0px 112px; }
+  padding: 130px 0px 108px; }
   @media (max-width: 979px) {
     .coments {
-      padding: 38px 0px 38px; } }
+      padding: 38px 0px 34px; } }
   .coments__container {
     overflow: hidden; }
   .coments__title {
@@ -1415,7 +1415,8 @@
   .coments .slick-current img {
     opacity: 1; }
   .coments__button {
-    margin-top: 50px; }
+    margin-top: 50px;
+    margin-bottom: 4px; }
     @media (max-width: 979px) {
       .coments__button {
         margin-top: 10px; } }
@@ -1442,7 +1443,8 @@
       .coments__button button:hover {
         background: transparent;
         box-shadow: none;
-        color: #F3C231; }
+        color: #F3C231;
+        font-size: 14px; }
   .coments .slick-initialized .slick-slide {
     display: flex;
     justify-content: center; }
