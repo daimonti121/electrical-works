@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: Inter;
   src: url("../fonts/Inter-Regular.woff");
@@ -1590,6 +1591,65 @@
         height: 16px;
         text-decoration: none;
         transition: 0.4s all; }
+
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter-Regular.woff");
+  font-weight: 400; }
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter-Bold.woff");
+  font-weight: 700; }
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter-ExtraLight.woff");
+  font-weight: 200; }
+@font-face {
+  font-family: Robotesqa4F-Bold;
+  src: url("../fonts/Robotesqa4F-Bold.woff");
+  font-weight: 700; }
+@keyframes glow {
+  0% {
+    opacity: 0; }
+  10% {
+    opacity: 0; }
+  20% {
+    opacity: 1; }
+  25% {
+    opacity: 1; }
+  30% {
+    opacity: 1; }
+  35% {
+    opacity: 0; }
+  40% {
+    opacity: 0; }
+  90% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.gototop {
+  width: 50px;
+  height: 50px;
+  background-color: #00b3ee;
+  position: fixed;
+  /*фиксир. позиц */
+  bottom: 30px;
+  right: 5%;
+  font-size: 50px;
+  text-align: center;
+  line-height: 50px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+  opacity: 0.5;
+  /*полупрозрачная */
+  display: none;
+  /*скрываем, а показываем Jquery */
+  border-radius: 10px;
+  box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer; }
+  .gototop:hover {
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+    opacity: 1;
+    /*при наведении не прозрачная */ }
 
 *, *::before, *::after {
   margin: 0;
