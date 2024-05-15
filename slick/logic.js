@@ -129,7 +129,7 @@ $('.forScreenShot').slick({
         arrows: true,
         centerMode: true,
         centerPadding: '0px',
-        slidesToShow: 1
+        slidesToShow: 1,
       }
     }
   ]

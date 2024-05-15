@@ -1,0 +1,109 @@
+@import 'media'
+@import 'fonts'
+@import 'variables'
+
+.footer
+    background: url('../img/back-image.png') 50% no-repeat
+    @include _979
+        background: url('../img/back-image-footer-mob.png') 50% no-repeat
+    &__container
+    &__inner
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 75px 0px
+        @include _1300
+            padding: 75px 20px
+        @include _1170
+            padding: 75px 0px
+        @include _979
+            flex-direction: column
+            // align-items: baseline
+            padding: 48px 0px
+    .menu
+        @include _979
+            order: 2
+            margin-top: 48px
+            text-align: center
+        ul
+            li
+                margin-top: 22px
+                &:nth-child(1)
+                    margin-top: 0
+                &:hover a
+                    color: #CB49FF
+                a
+                    color: #B9DDFD
+                    font-family: $primary-font
+                    font-size: 17px
+                    font-style: normal
+                    font-weight: 700
+                    line-height: 99.844%
+                    text-decoration: none
+                    transition: 0.4s all
+    .logo
+        position: relative
+        left: 50px
+        @include _979
+            order: 1
+            left: 0px
+
+    .info
+        @include _979
+            order: 3
+            margin-top: 48px
+            text-align: center
+        .title
+            color: #B9DDFD
+            font-family: $primary-font
+            font-size: 17px
+            font-style: normal
+            font-weight: 700
+            line-height: 99%
+            position: relative
+            &::after 
+                content: url(../img/light_bottom.png)
+                position: absolute
+                color: #fff
+                top: 25px
+                left: 15px
+
+        .center-info
+            margin-top: 36px
+            color: #B9DDFD
+            font-family: $primary-font
+            font-size: 14px
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+
+        .number
+            margin-top: 22px
+            cursor: pointer
+            a
+                color: #B9DDFD
+                font-family: $primary-font
+                font-size: 14px
+                font-style: normal
+                font-weight: 400
+                line-height: normal
+                text-decoration: none
+                transition: 0.4s all
+            &:hover a
+                color: #CB49FF
+
+        .network
+            margin-top: 23px
+            a
+                text-decoration: none
+                margin-right: 16px
+                transition: 0.4s all
+                cursor: pointer
+                &:hover .icon
+                    fill: #CB49FF
+                .icon
+                    fill: #B9DDFD
+                    width: 16px
+                    height: 16px
+                    text-decoration: none
+                    transition: 0.4s all

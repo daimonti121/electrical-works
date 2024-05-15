@@ -972,7 +972,7 @@
     margin: 70px auto 0px; }
     @media (max-width: 979px) {
       .coments .photos {
-        margin-top: 0px; } }
+        margin: 25px auto 28px; } }
     .coments .photos img {
       opacity: 0.5;
       transition: 0.4s all;
@@ -1400,7 +1400,7 @@
     margin: 70px auto 0px; }
     @media (max-width: 979px) {
       .coments .photos {
-        margin-top: 0px; } }
+        margin: 25px auto 28px; } }
     .coments .photos img {
       opacity: 0.5;
       transition: 0.4s all;
@@ -1451,6 +1451,145 @@
     content: url("../img/arrow-next-gold.png"); }
   .coments .slick-prev:before {
     content: url("../img/arrow-back-gold.png"); }
+
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter-Regular.woff");
+  font-weight: 400; }
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter-Bold.woff");
+  font-weight: 700; }
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter-ExtraLight.woff");
+  font-weight: 200; }
+@font-face {
+  font-family: Robotesqa4F-Bold;
+  src: url("../fonts/Robotesqa4F-Bold.woff");
+  font-weight: 700; }
+@keyframes glow {
+  0% {
+    opacity: 0; }
+  10% {
+    opacity: 0; }
+  20% {
+    opacity: 1; }
+  25% {
+    opacity: 1; }
+  30% {
+    opacity: 1; }
+  35% {
+    opacity: 0; }
+  40% {
+    opacity: 0; }
+  90% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.footer {
+  background: url("../img/back-image.png") 50% no-repeat; }
+  @media (max-width: 979px) {
+    .footer {
+      background: url("../img/back-image-footer-mob.png") 50% no-repeat; } }
+  .footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 75px 0px; }
+    @media (max-width: 1300px) {
+      .footer__inner {
+        padding: 75px 20px; } }
+    @media (max-width: 1170px) {
+      .footer__inner {
+        padding: 75px 0px; } }
+    @media (max-width: 979px) {
+      .footer__inner {
+        flex-direction: column;
+        padding: 48px 0px; } }
+  @media (max-width: 979px) {
+    .footer .menu {
+      order: 2;
+      margin-top: 48px;
+      text-align: center; } }
+  .footer .menu ul li {
+    margin-top: 22px; }
+    .footer .menu ul li:nth-child(1) {
+      margin-top: 0; }
+    .footer .menu ul li:hover a {
+      color: #CB49FF; }
+    .footer .menu ul li a {
+      color: #B9DDFD;
+      font-family: Inter;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 99.844%;
+      text-decoration: none;
+      transition: 0.4s all; }
+  .footer .logo {
+    position: relative;
+    left: 50px; }
+    @media (max-width: 979px) {
+      .footer .logo {
+        order: 1;
+        left: 0px; } }
+  @media (max-width: 979px) {
+    .footer .info {
+      order: 3;
+      margin-top: 48px;
+      text-align: center; } }
+  .footer .info .title {
+    color: #B9DDFD;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 99%;
+    position: relative; }
+    .footer .info .title::after {
+      content: url(../img/light_bottom.png);
+      position: absolute;
+      color: #fff;
+      top: 25px;
+      left: 15px; }
+  .footer .info .center-info {
+    margin-top: 36px;
+    color: #B9DDFD;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; }
+  .footer .info .number {
+    margin-top: 22px;
+    cursor: pointer; }
+    .footer .info .number a {
+      color: #B9DDFD;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-decoration: none;
+      transition: 0.4s all; }
+    .footer .info .number:hover a {
+      color: #CB49FF; }
+  .footer .info .network {
+    margin-top: 23px; }
+    .footer .info .network a {
+      text-decoration: none;
+      margin-right: 16px;
+      transition: 0.4s all;
+      cursor: pointer; }
+      .footer .info .network a:hover .icon {
+        fill: #CB49FF; }
+      .footer .info .network a .icon {
+        fill: #B9DDFD;
+        width: 16px;
+        height: 16px;
+        text-decoration: none;
+        transition: 0.4s all; }
 
 *, *::before, *::after {
   margin: 0;
