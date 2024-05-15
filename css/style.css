@@ -989,6 +989,8 @@
     @media (max-width: 979px) {
       .coments__button {
         margin-top: 10px; } }
+    .coments__button a {
+      text-decoration: none; }
     .coments__button button {
       color: #B9DDFD;
       text-align: center;
@@ -1417,6 +1419,8 @@
     @media (max-width: 979px) {
       .coments__button {
         margin-top: 10px; } }
+    .coments__button a {
+      text-decoration: none; }
     .coments__button button {
       color: #B9DDFD;
       text-align: center;
