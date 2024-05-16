@@ -8,7 +8,7 @@
     @include _1170
         margin-top: 70px
     @include _979
-        margin-top: 50px
+        margin-top: 27px
         margin-bottom: 0px
 
     .title
@@ -27,7 +27,7 @@
         margin-top: 100px
         @include _979
             flex-direction: column
-            margin-top: 40px
+            margin-top: 20px
     .image
         position: relative
         display: block
@@ -74,7 +74,7 @@
             @include _1170
                 margin-top: 50px
             @include _979
-                margin-top: 40px
+                display: none
             p
                 color: #B9DDFD
                 font-family: $primary-font
@@ -97,6 +97,8 @@
             @include _1170
                 max-width: 100%
                 margin-top: 0px
+            @include _979
+                display: none
             p
                 color: #B9DDFD
                 font-family: $primary-font
@@ -114,4 +116,20 @@
                 @include _979
                     width: 100%
                     font-size: 14px
-
+        .text-mob
+            display: none
+            @include _979
+                display: block
+                z-index: 10
+            p
+                color: #B9DDFD
+                font-family: $primary-font
+                font-size: 14px
+                font-style: normal
+                font-weight: 400
+                line-height: normal
+                z-index: 10
+                margin-top: 22px
+                &:nth-child(1)
+                    @include _979
+                        margin-top: 36px

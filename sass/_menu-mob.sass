@@ -20,6 +20,7 @@
             display: none
             @include _979
                 display: block
+                position: relative
         .menu
             position: fixed
             width: 100%
@@ -45,6 +46,7 @@
             justify-content: center
 
             padding-top: 20px
+            z-index: 1000
 
         .menu-btn
             width: 24px
@@ -57,7 +59,7 @@
             position: fixed
             top: 22px
             right: 20px
-
+            z-index: 100000
         .menu-btn span
             width: 24px
             height: 2px
@@ -183,9 +185,9 @@
 .header
     &__menu-mob
         display: none
-        background: url('../img/image_background_header_mob.png') 0%/cover no-repeat
         @include _979
-            display: block
+            display: block 
+            background: url("../img/image_background_header_mob.png") 0px/cover no-repeat
     .menu-mob
         &__inner
             .menu-mob-top
@@ -240,6 +242,9 @@
                         &:hover
                             color: #F3C231
                             background: rgba(149, 17, 192, 0.10)
+                        @include _979
+                            font-size: 14px
+                            padding: 15px 55px
 
         .menu-mob-bottom
             margin-top: 288px

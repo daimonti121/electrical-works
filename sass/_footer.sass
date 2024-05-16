@@ -4,8 +4,10 @@
 
 .footer
     background: url('../img/back-image.png') 50% no-repeat
+    background-color: #101F41
     @include _979
-        background: url('../img/back-image-footer-mob.png') 50% no-repeat
+        background: url("../img/back-image-footer-mob.png") 50% / cover no-repeat
+        background-color: #101F41
     &__container
     &__inner
         display: flex
@@ -23,11 +25,11 @@
     .menu
         @include _979
             order: 2
-            margin-top: 48px
+            margin-top: 45px
             text-align: center
         ul
             li
-                margin-top: 22px
+                margin-top: 23px
                 &:nth-child(1)
                     margin-top: 0
                 &:hover a
@@ -41,12 +43,18 @@
                     line-height: 99.844%
                     text-decoration: none
                     transition: 0.4s all
+                    @include _979
+                        font-size: 14px
     .logo
         position: relative
         left: 50px
         @include _979
             order: 1
             left: 0px
+        img
+            @include _979
+                width: 221px
+                height: 59px
 
     .info
         @include _979
@@ -61,12 +69,17 @@
             font-weight: 700
             line-height: 99%
             position: relative
-            &::after 
+            &::after
                 content: url(../img/light_bottom.png)
                 position: absolute
                 color: #fff
-                top: 25px
-                left: 15px
+                top: 24px
+                left: 13px
+                @include _979
+                    top: 19px
+                    left: 33px
+            @include _979
+                font-size: 14px
 
         .center-info
             margin-top: 36px
@@ -76,10 +89,16 @@
             font-style: normal
             font-weight: 400
             line-height: normal
+            @include _979
+                margin-top: 39px
 
         .number
             margin-top: 22px
             cursor: pointer
+            &:hover a
+                color: #CB49FF
+            &:hover .icon 
+                fill: #CB49FF
             a
                 color: #B9DDFD
                 font-family: $primary-font
@@ -88,9 +107,17 @@
                 font-weight: 400
                 line-height: normal
                 text-decoration: none
-                transition: 0.4s all
-            &:hover a
-                color: #CB49FF
+                transition: all 0.4s
+                display: flex
+                align-items: center
+                @include _979
+                    justify-content: center
+            .icon
+                width: 16px
+                height: 16px
+                fill: #B9DDFD
+                margin-right: 10px
+                transition: 0.4s
 
         .network
             margin-top: 23px
@@ -101,9 +128,11 @@
                 cursor: pointer
                 &:hover .icon
                     fill: #CB49FF
+                &:nth-child(3)
+                    margin-right: 0
                 .icon
                     fill: #B9DDFD
-                    width: 16px
-                    height: 16px
+                    width: 20px
+                    height: 20px
                     text-decoration: none
                     transition: 0.4s all

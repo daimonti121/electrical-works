@@ -106,6 +106,8 @@
                 margin-bottom: 70px
             @include _979
                 margin-bottom: 0
+                position: relative
+                bottom: 28px
             a
                 color: #B9DDFD
                 text-align: center
@@ -130,6 +132,9 @@
                     box-shadow: none
                     color: #F3C231
                     font-size: 14px
+                @include _979
+                    padding: 17px 49px
+                    border-radius: 5px
         
         &__boxs-mob
             display: none
@@ -151,6 +156,7 @@
                 @include _979
                     margin: 25px 10px 0px          
                     padding: 0px 36px  
+                    height: 419px
                 &__image
                     position: relative
                     z-index: 1
@@ -205,6 +211,9 @@
             .slick-dots li.slick-active 
                 background-color: #4098E6
                 z-index: 100
+
+            .slick-dots
+                bottom: -12px
             
 
 @keyframes animate

@@ -8,7 +8,7 @@
     padding: 130px 0px
     @include _979
         padding: 38px 0px
-        margin-top: 40px
+        margin-top: 44px
     &__title
         h2
             color: #B9DDFD
@@ -18,6 +18,8 @@
             font-style: normal
             font-weight: 400
             line-height: normal
+            @include _979
+                font-size: 25px
     &__info
         margin-top: 100px
         display: flex
@@ -120,11 +122,17 @@
         @include _979
             display: flex
             flex-direction: column
-            margin: 0 20px
+            margin: 0px
+            margin-top: 26px
+    .margin-top-2
+        margin-top: 19px !important
+    .margin-top-3
+        margin-top: 17px !important
+    .margin-top-4
+        margin-top: 19px !important
 
     .info-mob
         display: flex
-        margin-top: 28px
 
         &__left
             display: flex

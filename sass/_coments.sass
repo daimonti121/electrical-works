@@ -18,6 +18,11 @@
         font-weight: 400
         line-height: normal
         text-align: center
+        @include _979
+            font-size: 25px
+            width: 190px
+            margin: 0 auto
+            display: block
     &__inner
 
     .photos
@@ -33,6 +38,7 @@
             border-radius: 20px
             @include _979
                 opacity: 1
+                width: 270px
                 
     .slick-current img
         opacity: 1
@@ -81,3 +87,4 @@
         content: url('../img/arrow-next-gold.png')
     .slick-prev:before
         content: url('../img/arrow-back-gold.png')
+
