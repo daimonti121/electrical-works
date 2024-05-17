@@ -1092,12 +1092,20 @@
     .galery__light .lamp {
       display: block;
       margin: 0 auto; }
+      @media (max-width: 1440px) {
+        .galery__light .lamp {
+          width: 400px; } }
     .galery__light .light {
       opacity: 0;
       width: max-content;
       position: absolute;
       left: calc(50% - 1027px);
       top: -55px; }
+      @media (max-width: 1440px) {
+        .galery__light .light {
+          width: 1440px;
+          left: calc(50% - 720px);
+          top: -30px; } }
     .galery__light .element-animation.element-show {
       animation: glow 0.5s linear;
       opacity: 1; }

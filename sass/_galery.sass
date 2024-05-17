@@ -16,6 +16,8 @@
         .lamp
             display: block
             margin: 0 auto
+            @include _1440
+                width: 400px
 
         .light
             opacity: 0
@@ -23,6 +25,10 @@
             position: absolute
             left: calc(50% - 1027px)
             top: -55px
+            @include _1440
+                width: 1440px
+                left: calc(50% - 720px)
+                top: -30px
 
         .element-animation.element-show
             animation: glow 0.5s linear
