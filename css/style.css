@@ -1092,7 +1092,7 @@
     .galery__light .lamp {
       display: block;
       margin: 0 auto; }
-      @media (max-width: 1530px) {
+      @media (max-width: 1550px) {
         .galery__light .lamp {
           width: 450px; } }
       @media (max-width: 1440px) {
@@ -1104,11 +1104,11 @@
       position: absolute;
       left: calc(50% - 1027px);
       top: -55px; }
-      @media (max-width: 1530px) {
+      @media (max-width: 1550px) {
         .galery__light .light {
-          width: 1520px;
-          left: calc(50% - 760px);
-          top: -30px; } }
+          width: 1650px;
+          left: calc(50% - 825px);
+          top: -40px; } }
       @media (max-width: 1440px) {
         .galery__light .light {
           width: 1440px;
