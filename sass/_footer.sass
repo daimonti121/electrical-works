@@ -4,7 +4,7 @@
 
 .footer
     background: url('../img/back-image.png') 50% no-repeat
-    background-color: #101F41
+    background-color: #0E1B39
     @include _979
         background: url("../img/back-image-footer-mob.png") 50% / cover no-repeat
         background-color: #101F41
@@ -23,10 +23,13 @@
             // align-items: baseline
             padding: 48px 0px
     .menu
+        position: relative
+        left: 33px
         @include _979
             order: 2
             margin-top: 45px
             text-align: center
+            left: 0
         ul
             li
                 margin-top: 23px
@@ -57,10 +60,13 @@
                 height: 59px
 
     .info
+        position: relative
+        right: 28px
         @include _979
             order: 3
             margin-top: 48px
             text-align: center
+            right: 0
         .title
             color: #B9DDFD
             font-family: $primary-font
@@ -132,7 +138,10 @@
                     margin-right: 0
                 .icon
                     fill: #B9DDFD
-                    width: 20px
-                    height: 20px
+                    width: 17px
+                    height: 17px
                     text-decoration: none
                     transition: 0.4s all
+                    @include _979
+                        width: 20px
+                        height: 20px
