@@ -1092,7 +1092,7 @@
     .galery__light .lamp {
       display: block;
       margin: 0 auto; }
-      @media (max-width: 1520px) {
+      @media (max-width: 1500px) {
         .galery__light .lamp {
           width: 450px; } }
       @media (max-width: 1440px) {
@@ -1104,7 +1104,7 @@
       position: absolute;
       left: calc(50% - 1027px);
       top: -55px; }
-      @media (max-width: 1520px) {
+      @media (max-width: 1500px) {
         .galery__light .light {
           width: 1520px;
           left: calc(50% - 760px);
